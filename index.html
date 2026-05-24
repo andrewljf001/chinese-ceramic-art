@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雅陶 · Chinese Ceramic Art | Authentic Yixing Zisha Teapots</title>
+<meta name="description" content="Authentic Chinese ceramic masterpieces. Handcrafted Yixing zisha teapots, celadon, and fine pottery. Worldwide shipping.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF7F2;--bg2:#F0EAE0;--bg3:#E8DDD0;--red:#8B1A1A;--gold:#C4975A;--text:#1A1208;--muted:#6B5E4C;--border:#D4C5B0;--wa:#25D366;--max:1100px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--bg);color:var(--text);line-height:1.75}
+a{color:inherit;text-decoration:none}
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 5%;background:var(--bg);border-bottom:1px solid var(--border)}
+.logo{display:flex;flex-direction:column;line-height:1.15}
+.logo-cn{font-family:'Noto Serif SC',serif;font-size:1.4rem;font-weight:600;color:var(--red)}
+.logo-en{font-size:.6rem;letter-spacing:.25em;color:var(--muted)}
+.nav-links{list-style:none;display:flex;gap:2.5rem;align-items:center}
+.nav-links a{font-size:.86rem;letter-spacing:.06em;color:var(--muted);transition:color .3s}
+.nav-links a:hover{color:var(--red)}
+/* HERO */
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--bg2);padding:4rem 5%;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(196,151,90,.08) 0%,transparent 70%)}
+.hero-inner{position:relative;z-index:1;max-width:700px}
+.hero-sub{font-size:.78rem;letter-spacing:.35em;color:var(--gold);margin-bottom:1.8rem}
+.hero h1{font-family:'Noto Serif SC',serif;font-size:clamp(4rem,12vw,8rem);font-weight:400;color:var(--text);margin-bottom:.8rem;line-height:1.05}
+.hero-tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:1.25rem;color:var(--muted);margin-bottom:2.5rem}
+.btn-exp{display:inline-block;font-size:.86rem;letter-spacing:.12em;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:.25rem;transition:opacity .3s}
+.btn-exp:hover{opacity:.65}
+/* SECTION */
+.sec{max-width:var(--max);margin:0 auto;padding:5rem 5%}
+.sec-hdr{text-align:center;margin-bottom:3.5rem}
+.sec-hdr h2{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:400;margin-bottom:.5rem}
+.sec-hdr p{color:var(--muted);font-size:.9rem}
+.div{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0 5%}
+/* FEATURED */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.pc{background:#fff;border:1px solid var(--border);transition:box-shadow .3s}
+.pc:hover{box-shadow:0 8px 32px rgba(26,18,8,.08)}
+.pimg{width:100%;aspect-ratio:1/1;background:var(--bg2);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;transition:transform .5s}
+.pc:hover .pimg{transform:scale(1.03)}
+.pimg svg{width:80px;height:80px;opacity:.12}
+.badge{position:absolute;top:.8rem;left:.8rem;background:var(--red);color:#fff;font-size:.65rem;letter-spacing:.12em;padding:.2rem .55rem}
+.badge.sold{background:var(--muted)}
+.pinfo{padding:1.4rem}
+.partist{font-size:.72rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.3rem}
+.pname{font-family:'Noto Serif SC',serif;font-size:1rem;margin-bottom:.4rem;line-height:1.5}
+.pdetail{font-size:.78rem;color:var(--muted);margin-bottom:1rem}
+.pfoot{display:flex;justify-content:space-between;align-items:center}
+.pprice{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--red)}
+.benq{border:1px solid var(--red);color:var(--red);font-size:.76rem;letter-spacing:.06em;padding:.4rem 1rem;transition:all .3s}
+.benq:hover{background:var(--red);color:#fff}
+.view-all{text-align:center;margin-top:3.5rem}
+.view-all a{font-size:.86rem;letter-spacing:.12em;color:var(--muted);border-bottom:1px solid var(--border);padding-bottom:.2rem;transition:color .3s}
+.view-all a:hover{color:var(--red)}
+/* CATEGORIES */
+.cats{background:var(--bg2);padding:5rem 5%}
+.cats-inner{max-width:var(--max);margin:0 auto}
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3.5rem}
+.ci{display:flex;flex-direction:column;align-items:center;gap:1rem;cursor:pointer;transition:opacity .3s}
+.ci:hover{opacity:.75}
+.cimg{width:100%;aspect-ratio:1/1;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+.cimg svg{width:48px;height:48px;opacity:.2}
+.clbl{font-family:'Noto Serif SC',serif;font-size:.95rem;text-align:center;line-height:1.6}
+.clbl small{font-family:'Noto Sans SC',sans-serif;font-size:.72rem;color:var(--muted);display:block}
+/* STORY */
+.story{padding:7rem 5%;text-align:center;background:var(--bg)}
+.story-inner{max-width:580px;margin:0 auto}
+.story-lbl{font-size:.7rem;letter-spacing:.35em;color:var(--gold);margin-bottom:1.2rem}
+.story h2{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:400;margin-bottom:1.5rem}
+.story p{color:var(--muted);line-height:1.95;margin-bottom:2rem}
+.story a{font-size:.86rem;letter-spacing:.08em;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:.2rem}
+/* CONTACT */
+.contact{padding:5rem 5%;background:var(--bg2);text-align:center}
+.contact-inner{max-width:500px;margin:0 auto}
+.contact h2{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:400;margin-bottom:1rem}
+.contact p{color:var(--muted);font-size:.9rem;margin-bottom:2rem;line-height:1.9}
+.cbtns{display:flex;flex-direction:column;gap:1rem;align-items:center}
+.bwa{display:inline-flex;align-items:center;gap:.6rem;background:var(--wa);color:#fff;font-weight:600;font-size:.88rem;padding:.85rem 2rem;transition:opacity .3s}
+.bwa:hover{opacity:.88}
+.bem{display:inline-block;border:1px solid var(--red);color:var(--red);font-size:.88rem;padding:.85rem 2rem;transition:all .3s}
+.bem:hover{background:var(--red);color:#fff}
+.how-to{margin-top:3rem;text-align:left;border-top:1px solid var(--border);padding-top:2.5rem}
+.how-to h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:400;margin-bottom:1rem;color:var(--text)}
+.how-to ol{color:var(--muted);font-size:.86rem;line-height:2.2;padding-left:1.2rem}
+/* FOOTER */
+footer{text-align:center;padding:3rem 5%;border-top:1px solid var(--border)}
+.flogo-cn{font-family:'Noto Serif SC',serif;font-size:1.1rem;color:var(--red);display:block}
+.flogo-en{font-size:.58rem;letter-spacing:.25em;color:var(--muted);display:block;margin-bottom:.8rem}
+.fcopy{font-size:.75rem;color:var(--border)}
+/* WA FLOAT */
+.waf{position:fixed;bottom:2rem;right:2rem;width:54px;height:54px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.32);z-index:999;transition:transform .3s}
+.waf:hover{transform:scale(1.1)}
+@media(max-width:768px){.nav-links{display:none}.hero h1{font-size:4rem}.pgrid{grid-template-columns:1fr}.cgrid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">
+    <span class="logo-cn">雅陶</span>
+    <span class="logo-en">CERAMIC ART</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#contact">Enquire</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-sub">Authentic · Handcrafted · Timeless</p>
+    <h1>一壶一世界</h1>
+    <p class="hero-tagline">Discover the Soul of Chinese Ceramic Art</p>
+    <a href="#collection" class="btn-exp">Explore Collection ↓</a>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- FEATURED COLLECTION -->
+<section class="sec" id="collection">
+  <div class="sec-hdr">
+    <h2>Featured Works</h2>
+    <p>Curated masterpieces from celebrated artisans</p>
+  </div>
+  <div class="pgrid">
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#8B1A1A" stroke-width="1"><ellipse cx="40" cy="40" rx="25" ry="22"/><ellipse cx="40" cy="28" rx="10" ry="5"/><path d="M15 40 Q5 38 8 44 Q11 50 18 46"/><path d="M65 40 Q72 40 70 34"/></svg>
+        <span class="badge">Available</span>
+      </div>
+      <div class="pinfo">
+        <p class="partist">Master · 宜兴名师</p>
+        <h3 class="pname">西施壶 · Xi Shi Teapot</h3>
+        <p class="pdetail">Zhuni Clay · 180ml · Yixing, Jiangsu</p>
+        <div class="pfoot">
+          <span class="pprice">$480</span>
+          <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Xi+Shi+Teapot+%28$480%29" class="benq" target="_blank">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#8B1A1A" stroke-width="1"><rect x="18" y="24" width="44" height="36" rx="4"/><rect x="24" y="18" width="32" height="10" rx="2"/><line x1="62" y1="38" x2="72" y2="34"/><line x1="62" y1="44" x2="72" y2="48"/></svg>
+        <span class="badge">Available</span>
+      </div>
+      <div class="pinfo">
+        <p class="partist">Master · 宜兴名师</p>
+        <h3 class="pname">仿古壶 · Fanggu Teapot</h3>
+        <p class="pdetail">Zini Clay · 240ml · Yixing, Jiangsu</p>
+        <div class="pfoot">
+          <span class="pprice">$680</span>
+          <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Fanggu+Teapot+%28$680%29" class="benq" target="_blank">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#8B1A1A" stroke-width="1"><ellipse cx="40" cy="50" rx="24" ry="16"/><ellipse cx="40" cy="34" rx="18" ry="22"/><ellipse cx="40" cy="16" rx="8" ry="4"/></svg>
+        <span class="badge">Available</span>
+      </div>
+      <div class="pinfo">
+        <p class="partist">Master · 景德镇名师</p>
+        <h3 class="pname">龙泉青瓷瓶 · Longquan Vase</h3>
+        <p class="pdetail">Celadon Glaze · H28cm · Longquan</p>
+        <div class="pfoot">
+          <span class="pprice">$390</span>
+          <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Longquan+Vase+%28$390%29" class="benq" target="_blank">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#8B1A1A" stroke-width="1"><ellipse cx="40" cy="48" rx="26" ry="10"/><path d="M14 48 Q14 20 40 20 Q66 20 66 48"/><ellipse cx="40" cy="21" rx="10" ry="4"/></svg>
+        <span class="badge sold">Sold</span>
+      </div>
+      <div class="pinfo">
+        <p class="partist">Master · 汝州名师</p>
+        <h3 class="pname">汝窑天青釉碗 · Ru Ware Bowl</h3>
+        <p class="pdetail">Sky Blue Glaze · D14cm · Ruzhou</p>
+        <div class="pfoot">
+          <span class="pprice">$920</span>
+          <a href="https://wa.me/YOUR_NUMBER?text=Interested+in+similar+Ru+Ware+pieces" class="benq" target="_blank">Similar?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#8B1A1A" stroke-width="1"><ellipse cx="40" cy="42" rx="22" ry="20"/><ellipse cx="40" cy="30" rx="9" ry="4"/><path d="M18 42 Q8 40 10 48 Q12 54 20 50"/></svg>
+        <span class="badge">Available</span>
+      </div>
+      <div class="pinfo">
+        <p class="partist">Master · 宜兴名师</p>
+        <h3 class="pname">龙蛋壶 · Dragon Egg Pot</h3>
+        <p class="pdetail">Duanni Clay · 200ml · Yixing</p>
+        <div class="pfoot">
+          <span class="pprice">$560</span>
+          <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Dragon+Egg+Pot+%28$560%29" class="benq" target="_blank">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 80 80" fill="none" stroke="#8B1A1A" stroke-width="1"><path d="M20 60 Q20 24 40 20 Q60 24 60 60"/><ellipse cx="40" cy="60" rx="20" ry="6"/><path d="M30 38 Q40 32 50 38"/></svg>
+        <span class="badge">Available</span>
+      </div>
+      <div class="pinfo">
+        <p class="partist">Master · 景德镇名师</p>
+        <h3 class="pname">青花梅瓶 · Blue & White Prunus</h3>
+        <p class="pdetail">Cobalt Blue Underglaze · H32cm</p>
+        <div class="pfoot">
+          <span class="pprice">$720</span>
+          <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Blue+White+Prunus+Vase+%28$720%29" class="benq" target="_blank">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="view-all"><a href="#contact">Enquire about more pieces →</a></div>
+</section>
+
+<!-- CATEGORIES -->
+<div class="cats" id="categories">
+  <div class="cats-inner">
+    <div class="sec-hdr">
+      <h2>Browse by Category</h2>
+      <p>Six centuries of ceramic tradition</p>
+    </div>
+    <div class="cgrid">
+      <div class="ci">
+        <div class="cimg"><svg viewBox="0 0 48 48" fill="none" stroke="#8B1A1A" stroke-width="1.2"><ellipse cx="24" cy="26" rx="16" ry="14"/><ellipse cx="24" cy="18" rx="7" ry="3"/><path d="M8 26Q2 25 4 30Q6 34 11 31"/></svg></div>
+        <span class="clbl">紫砂壶<small>Zisha Teapot</small></span>
+      </div>
+      <div class="ci">
+        <div class="cimg"><svg viewBox="0 0 48 48" fill="none" stroke="#8B1A1A" stroke-width="1.2"><ellipse cx="24" cy="32" rx="16" ry="8"/><path d="M8 32Q8 14 24 12Q40 14 40 32"/></svg></div>
+        <span class="clbl">青瓷<small>Celadon</small></span>
+      </div>
+      <div class="ci">
+        <div class="cimg"><svg viewBox="0 0 48 48" fill="none" stroke="#8B1A1A" stroke-width="1.2"><ellipse cx="24" cy="30" rx="18" ry="8"/><ellipse cx="24" cy="22" rx="14" ry="16"/></svg></div>
+        <span class="clbl">汝窑<small>Ru Ware</small></span>
+      </div>
+      <div class="ci">
+        <div class="cimg"><svg viewBox="0 0 48 48" fill="none" stroke="#8B1A1A" stroke-width="1.2"><rect x="10" y="10" width="28" height="32" rx="3"/><line x1="16" y1="20" x2="32" y2="20"/><line x1="16" y1="28" x2="28" y2="28"/></svg></div>
+        <span class="clbl">青花<small>Blue & White</small></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STORY -->
+<div class="story">
+  <div class="story-inner">
+    <p class="story-lbl">OUR STORY</p>
+    <h2>Rooted in 600 Years of Craft</h2>
+    <p>From the clay hills of Yixing to collectors worldwide — each piece carries the breath of its maker and the spirit of an ancient tradition. We work directly with certified master artisans to bring authentic, investment-grade ceramics to global collectors.</p>
+    <a href="#contact">Contact us to learn more →</a>
+  </div>
+</div>
+
+<div class="div"></div>
+
+<!-- CONTACT -->
+<div class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="story-lbl" style="margin-bottom:.8rem">PURCHASE ENQUIRY</p>
+    <h2>How to Buy</h2>
+    <p>Each piece is unique. Contact us via WhatsApp or email — we respond within 24 hours with full details, provenance, and payment instructions.</p>
+    <div class="cbtns">
+      <a href="https://wa.me/YOUR_NUMBER?text=Hello%2C+I'd+like+to+enquire+about+a+ceramic+piece" class="bwa" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.469 2.018 7.773L0 32l8.418-2.207A15.93 15.93 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.078 22.418c-.336.943-1.965 1.805-2.703 1.918-.691.105-1.559.15-2.514-.158-.578-.188-1.32-.438-2.268-.857-3.992-1.723-6.602-5.73-6.801-5.994-.199-.264-1.625-2.162-1.625-4.125s1.027-2.926 1.393-3.328c.363-.402.793-.502 1.059-.502.264 0 .527.002.758.014.242.012.568-.092.889.678.336.801 1.143 2.764 1.242 2.963.1.199.166.43.033.693-.133.264-.199.43-.398.662-.199.232-.418.519-.596.697-.199.199-.406.414-.175.812.232.398 1.031 1.699 2.213 2.748 1.52 1.355 2.801 1.773 3.199 1.973.398.199.629.166.861-.1.232-.264.994-1.162 1.26-1.561.264-.398.527-.332.889-.199.363.133 2.309 1.09 2.707 1.287.398.199.662.299.762.465.1.166.1.963-.236 1.906z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <a href="mailto:YOUR_EMAIL?subject=Ceramic%20Enquiry" class="bem">✉ Send Email</a>
+    </div>
+    <div class="how-to">
+      <h3>Purchase Process</h3>
+      <ol>
+        <li>Browse the collection and note the piece you love</li>
+        <li>Contact us via WhatsApp or email with the item name</li>
+        <li>We confirm availability and send full details + photos</li>
+        <li>Payment via bank transfer (T/T) — invoice provided</li>
+        <li>Carefully packed and shipped worldwide with tracking</li>
+        <li>Certificate of authenticity included with every piece</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="flogo-cn">雅陶</span>
+  <span class="flogo-en">CERAMIC ART</span>
+  <div class="fcopy">© 2026 Chinese Ceramic Art · Authentic Yixing Zisha Teapots · Fine Pottery · Worldwide</div>
+</footer>
+
+<a href="https://wa.me/YOUR_NUMBER?text=Hello%2C+ceramic+art+enquiry" class="waf" target="_blank" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.469 2.018 7.773L0 32l8.418-2.207A15.93 15.93 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.078 22.418c-.336.943-1.965 1.805-2.703 1.918-.691.105-1.559.15-2.514-.158-.578-.188-1.32-.438-2.268-.857-3.992-1.723-6.602-5.73-6.801-5.994-.199-.264-1.625-2.162-1.625-4.125s1.027-2.926 1.393-3.328c.363-.402.793-.502 1.059-.502.264 0 .527.002.758.014.242.012.568-.092.889.678.336.801 1.143 2.764 1.242 2.963.1.199.166.43.033.693-.133.264-.199.43-.398.662-.199.232-.418.519-.596.697-.199.199-.406.414-.175.812.232.398 1.031 1.699 2.213 2.748 1.52 1.355 2.801 1.773 3.199 1.973.398.199.629.166.861-.1.232-.264.994-1.162 1.26-1.561.264-.398.527-.332.889-.199.363.133 2.309 1.09 2.707 1.287.398.199.662.299.762.465.1.166.1.963-.236 1.906z"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
